@@ -65,6 +65,10 @@ export function getStageColor(stage) {
     'Series A': 'badge-blue',
     'Series B': 'badge-purple',
     'Series C': 'badge-amber',
+    'Series D': 'badge-red',
+    'Series E': 'badge-red',
+    'Series F': 'badge-red',
+    'Acquired': 'badge-gray',
   }
   return map[stage] || 'badge-gray'
 }
@@ -75,17 +79,18 @@ export function getSignalIcon(type) {
     hiring: '👥',
     product: '🚀',
     partnership: '🤝',
+    growth: '📈',
   }
   return map[type] || '📌'
 }
 
 export const INDUSTRIES = [
-  'AI/ML', 'SaaS', 'Fintech', 'HealthTech', 'Climate', 'DevTools',
-  'Cybersecurity', 'EdTech', 'AgriTech', 'FoodTech', 'LegalTech',
-  'Robotics', 'Deep Tech', 'Space Tech', 'Travel', 'Web3', 'Construction Tech',
+  'AI / ML', 'AI Infrastructure', 'Developer Tools', 'Data & Analytics',
+  'Analytics', 'Fintech', 'HR Tech', 'Productivity', 'SaaS',
+  'Automation', 'CRM', 'Media Tech', 'Ecommerce', 'Communications',
 ]
 
-export const STAGES = ['Pre-Seed', 'Seed', 'Series A', 'Series B']
+export const STAGES = ['Seed', 'Series A', 'Series B', 'Series C', 'Series D', 'Series E', 'Series F']
 
 export const EMPLOYEE_RANGES = [
   { label: '1-10', min: 1, max: 10 },

@@ -28,7 +28,7 @@ Extract the following and return ONLY valid JSON (no markdown, no backticks):
 Be specific and factual. Only include signals you can actually infer from the content.`
 
   const completion = await groq.chat.completions.create({
-    model: 'llama-3.1-70b-versatile',
+    model: 'llama-3.3-70b-versatile',
     messages: [{ role: 'user', content: prompt }],
     temperature: 0.3,
     max_tokens: 1500,
@@ -72,7 +72,7 @@ Return ONLY valid JSON:
 Be honest and critical. Only give high scores (70+) for strong matches.`
 
   const completion = await groq.chat.completions.create({
-    model: 'llama-3.1-70b-versatile',
+    model: 'llama-3.3-70b-versatile',
     messages: [{ role: 'user', content: prompt }],
     temperature: 0.3,
     max_tokens: 300,
