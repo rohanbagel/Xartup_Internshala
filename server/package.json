@@ -1,0 +1,17 @@
+{
+  "name": "vc-intelligence-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "@mendable/firecrawl-js": "^1.9.1",
+    "groq-sdk": "^0.8.0",
+    "@supabase/supabase-js": "^2.47.10"
+  }
+}
